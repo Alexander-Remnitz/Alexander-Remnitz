@@ -1,42 +1,32 @@
-# Hi, I'm Alex 👋
+# Hi, I'm Alex
 
-Self-taught **cybersecurity** learner based in Tbilisi, Georgia — focused on
-blue-team / SOC skills, detection engineering, and practical home-lab work.
+Self-taught **cybersecurity and AI practitioner** focused on hands-on security labs, red-team methodology, SOC/detection engineering, and local AI security automation.
 
-I learn by building complete, connected systems rather than isolated exercises.
-My main project is a full **attack → detect → automate** pipeline, built from
-scratch on a QEMU/KVM home lab:
+I have studied cybersecurity and AI independently for several years and learn primarily by building complete, connected systems rather than isolated exercises. My current home-lab portfolio follows one pipeline:
 
-## 🔗 Featured projects
+## Attack → Detect → Automate
+
+### ⚔️ [PROJECT ZERO CTF](PROJECT_ZERO_SHOWCASE.md) — *attack*
+An original multi-stage boot-to-root CTF target I designed and built on **QEMU/KVM + libvirt**. It covers reconnaissance, web exploitation, a low-privilege foothold, credential analysis, a user pivot, and a custom Linux privilege-escalation path. The full author repository remains private to protect credentials, flags, and the solution; the linked showcase is spoiler-free.
+
+`Kali Linux` · `Debian` · `Apache/PHP` · `Linux privilege escalation` · `libvirt` · `Bash`
 
 ### 🛡️ [wazuh-soc-lab](https://github.com/Alexander-Remnitz/wazuh-soc-lab) — *detect*
-A home SOC built on **Wazuh** (SIEM/XDR). Detects five attack types launched
-from Kali against an isolated vulnerable target — port scan, SSH brute force,
-web directory brute force, file-integrity tampering, and a **custom detection
-rule** I wrote and validated myself — all mapped to MITRE ATT&CK, with
-dashboard evidence and honest troubleshooting notes.
+A home SOC built on **Wazuh** with attacks launched from Kali against the PROJECT ZERO target. The lab validates **six detection scenarios**, including SSH brute force, web directory brute force, realtime file-integrity monitoring, privileged activity, a custom Wazuh detection rule, and port-scan detection through **Suricata**. The work includes MITRE ATT&CK mapping, dashboard evidence, custom detection content, and troubleshooting notes.
 
-`Wazuh` · `SIEM` · `detection engineering` · `MITRE ATT&CK` · `Ubuntu` · `libvirt`
+A key part of this project was identifying that the host-based Wazuh agent could not directly see a raw SYN scan, then adding Suricata network telemetry and a custom signature to close that visibility gap.
+
+`Wazuh` · `Suricata` · `SIEM` · `detection engineering` · `MITRE ATT&CK` · `Ubuntu` · `libvirt`
 
 ### 🤖 [ai-soc-bot](https://github.com/Alexander-Remnitz/ai-soc-bot) — *automate*
-A **local, private AI** that triages the Wazuh alerts above using an on-device
-LLM via **Ollama** — no cloud, no API keys, no data leaving the machine. Pulls
-alerts over an SSH tunnel, groups duplicates, and produces a structured triage
-(summary, severity, false-positive check, next step) as a report.
+A **Python** security-automation tool that pulls Wazuh alerts over an SSH tunnel and uses a locally hosted **Ollama** model for structured Tier-1-style triage. Alert content remains inside the local lab environment rather than being sent to a third-party cloud LLM API. The bot groups duplicate events, validates structured model output, and produces terminal/Markdown reports.
 
-`Python` · `Ollama` · `local LLM` · `security automation` · `SSH tunnelling`
+`Python` · `Ollama` · `local LLM` · `security automation` · `Wazuh` · `SSH tunnelling`
 
-### ⚔️ Red-team CTF lab — *attack* (private)
-An original boot-to-root CTF target I designed and built (web foothold →
-privilege escalation → root), used as the "attacker's-eye" side of the pipeline
-above. Kept private so it isn't spoiled.
+## Tools & areas of focus
 
-## 🧰 Tools & focus
+`Cybersecurity` · `Artificial Intelligence` · `Red Teaming` · `Penetration Testing` · `SOC` · `Detection Engineering` · `Wazuh` · `Suricata` · `Kali Linux` · `QEMU/KVM` · `libvirt` · `Linux (Arch / Debian / Ubuntu)` · `Python` · `Bash` · `Git` · `Ollama` · `MITRE ATT&CK`
 
-`Wazuh` · `Kali Linux` · `QEMU/KVM · libvirt` · `Linux (Arch / Debian / Ubuntu)` ·
-`Python` · `Bash` · `Git` · `Ollama` · `MITRE ATT&CK` · `detection engineering`
+## Current direction
 
-## 🌱 Currently
-
-Deepening blue-team skills and growing the home lab. Open to learning,
-collaboration, and SOC-analyst opportunities.
+I am continuing to develop practical cybersecurity and AI skills and am working toward my first professional opportunity in the industry. My strongest interests are offensive security/red-team work, detection engineering, and the intersection of AI with cybersecurity.
