@@ -25,7 +25,7 @@ A **Python** security-automation tool that pulls Wazuh alerts over an SSH tunnel
 
 ## Tools & areas of focus
 
-`Cybersecurity` · `Artificial Intelligence` · `Red Teaming` · `Penetration Testing` · `SOC` · `Detection Engineering` · `Wazuh` · `Suricata` · `Kali Linux` · `QEMU/KVM` · `libvirt` · `Linux (Arch / Debian / Ubuntu)` · `Python` · `Bash` · `Git` · `Ollama` · `MITRE ATT&CK`
+`Cybersecurity` · `Artificial Intelligence` · `Red Teaming` · `Offensive Security` · `SOC` · `Detection Engineering` · `Wazuh` · `Suricata` · `Kali Linux` · `QEMU/KVM` · `libvirt` · `Linux (Arch / Debian / Ubuntu)` · `Python` · `Bash` · `Git` · `Ollama` · `MITRE ATT&CK`
 
 ## Current direction
 
